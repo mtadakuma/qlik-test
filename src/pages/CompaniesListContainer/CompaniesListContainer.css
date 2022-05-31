@@ -1,0 +1,51 @@
+.company-link{
+    text-decoration:none;
+    color:black;
+}
+
+.companies-list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+
+.company-card{
+    border: 2px solid black;
+    border-radius:15px;
+    margin: 30px;
+    text-align:center;
+    height: 250px;
+    width: 200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 32px;
+    transition: 0.5s;
+}
+
+.company-card:hover{
+    color:white;
+    background-color: black;
+    transform: translateY(-10px);
+    border-radius:8px;
+    height: 250px;
+    width: 250px;
+}
+
+.active-card{
+    border: 2px solid red;
+}
+
+.iframe-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  padding: 20px;
+} 
+
+.iFrame{
+  border:none;
+  width:600px;
+  height:600px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
