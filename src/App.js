@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import CompaniesListContainer from './pages/CompaniesListContainer'
+import Branches from './components/Branches'
+import Foods from './components/Foods'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path='/' element={<CompaniesListContainer />} />
-        <Route path='/foods' element={<CompaniesListContainer />} />
+        <Route path='/' element={<Branches />} />
+        <Route path='/foods' element={<Foods />} />
       </Routes>
     </>
   );
