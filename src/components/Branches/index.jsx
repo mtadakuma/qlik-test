@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Branches.css'
 
-const CompaniesListContainer = () => {
+const Branches = () => {
 
     const [branches, setBranches] = useState([]);
 
@@ -53,15 +53,14 @@ const CompaniesListContainer = () => {
         </div>
         {branches.length > 0 &&
         < div>
-            <h4 className='selected-branches'>{`Paises seleccionados: ${branches}`}</h4>
+            <h4 className='selected-branches'>{`Sucursales seleccionadas: ${branches}`}</h4>
         </div>
         }
 
         <div className="iframe-container">
             <div>
                 <iframe
-                src={`http://localhost:4848/single/?appid=C%3A%5CUsers%5Ctadak%5CDocuments%5CQlik%5CSense%5CApps%5CComidas.qvf&obj=DVQagP&select=$::NOMBRE_SUCURSAL,${branches}`}
-                        /* Buenos%20Aires,C%C3%B3rdoba,Neuqu%C3%A9n */
+                src={`http://localhost:4848/single/?appid=C%3A%5CUsers%5Cmt250056%5COneDrive%20-%20Teradata%5CDocuments%5CQlik%5CSense%5CApps%5CRestaurante.qvf&obj=gdjPXv&opt=ctxmenu,currsel&select=$::NOMBRE_SUCURSAL,${branches}`}
                 title='branches'
                 className='iframe-branches' >
                 </iframe>
@@ -71,4 +70,4 @@ const CompaniesListContainer = () => {
     )
 }
 
-export default CompaniesListContainer
+export default Branches
