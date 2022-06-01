@@ -30,12 +30,12 @@ const Foods = () => {
     },
     {
         id: 2,
-        name: 'Hamburguesa',
+        name: 'Hamburguesas',
         imgURL: burger
     },
     {
         id: 3,
-        name: 'Pizza',
+        name: 'Pizzas',
         imgURL: pizza
     },
     {
